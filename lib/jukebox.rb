@@ -30,8 +30,14 @@ def play(songs)
   songs.each_with_index do |song, i|
     if users_input == song || users_input.to_i == i+1 
       puts "Playing #{song}"
+<<<<<<< HEAD
     #else 
       #puts "Invalid input, please try again"
+=======
+    else 
+      puts "Invalid input, please try again"
+      play(songs)
+>>>>>>> 461b3143d2c2b37f427d83bd7da470d326a81c7a
     end 
   end 
 end 
